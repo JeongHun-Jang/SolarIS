@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Elements - Industrious by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+    	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<link rel="stylesheet" href="static/css/main.css" />
+		<style type="text/css">
+		  .wrapper {
+			 overflow:hidden;
+			 height:auto;
+		  }
+		  fieldset.top_info{
+			 padding : 3px;
+			 margin : 10px;
+			 border : 3px solid black;
+			 float:left;
+			 width:23%;
+			 height : 150px;
+		  }
+		  table th{
+			 padding : 1px;
+			 text-align : center;
+		  }
+		  table td{
+			 padding : 1px;
+			 text-align : center;
+		  }
+		 </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Industrious</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="elements.html">Elements</a></li>
+					<li><a href="generic.html">Generic</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>모니터링 시스템 </h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<!--
+				<div class="inner">
+					<div class="content">
+
+
+						<div class="row">
+							<div class="col-6 col-12-medium">
+				-->
+
+				<h1> {{ uid }}님의 장비 현황</h1>
+
+
+				<div style="margin:bottom:20px; width:100%">
+					<fieldset class="top_info">
+						<legend style="margin:0; padding:0; color:blue" align="center">생산통계</legend>
+						<div style="float:left;width:40%">총 발전량 </div><div style="float:right;width:60%">{{ cumTP }} kW</div>
+						<div style="float:left;width:40%">연 발전량 </div><div style="float:right;width:60%">{{ cumYP }} kW</div>
+						<div style="float:left;width:40%">월 발전량 </div><div style="float:right;width:60%">{{ cumMP }} kW</div>
+						<div style="float:left;width:40%">일 발전량 </div><div style="float:right;width:60%">{{ cumDP }} kW</div>
+					</fieldset>
+					<fieldset class="top_info">
+						<legend style="margin:0; padding:0; color:blue" align="center">입력현황</legend>
+						<div style="float:left;width:40%">입력전압 </div><div style="float:right;width:60%">577.97 Vdc</div>
+						<div style="float:left;width:40%">입력전류 </div><div style="float:right;width:60%">26.38 A</div>
+						<div style="float:left;width:40%">입력전력 </div><div style="float:right;width:60%">15.67 kW</div>
+					</fieldset>
+					<fieldset class="top_info">
+						<legend style="margin:0; padding:0; color:blue" align="center">발전현황</legend>
+						<div style="float:left;width:40%">출력전압 </div><div style="float:right;width:60%">481.77 Vdc</div>
+						<div style="float:left;width:40%">출력전류 </div><div style="float:right;width:60%">37.32 A</div>
+						<div style="float:left;width:40%">출력전력 </div><div style="float:right;width:60%">14.88 kW</div>
+					</fieldset>
+					<fieldset class="top_info">
+						<legend style="margin:0; padding:0; color:blue" align="center">인버터 발전현황</legend>
+
+						<div style="float:left;width:50%;border:1px solid black" align="center">인버터 명</div>
+						<div style="float:left;width:25%;border:1px solid black" align="center">On/Off</div>
+						<div style="float:left;width:25%;border:1px solid black" align="center">이상여부</div>
+
+
+						<div style="float:left;width:50%;border:1px solid black" align="center">{{Dname[0]}} </div>
+						<div style="float:left;width:25%;border:1px solid black" align="center">{{OnOff[0]}} </div>
+						<script type = 'text/javascript'>
+							if ( {{Anorm[0]}} == '0'){
+								document.write("<div style=\"float:left;width:25%;border:1px solid black; background-color:green\" align=\"center\"> 정상 </div>")
+							}
+							else{
+								document.write("<div style=\"float:left;width:25%;border:1px solid black; background-color:red\" align=\"center\"> 이상 </div>")
+							}
+						</script>
+						<!--
+						<div style="float:left;width:25%;border:1px solid black" align="center"> {{Anorm[0]}} </div>
+						-->
+						<div style="float:left;width:50%;border:1px solid black" align="center">{{Dname[1]}} </div>
+						<div style="float:left;width:25%;border:1px solid black" align="center"> {{OnOff[1]}} </div>
+						<script type = 'text/javascript'>
+							if ( {{Anorm[1]}} == '0'){
+								document.write("<div style=\"float:left;width:25%;border:1px solid black; background-color:green\" align=\"center\"> 정상 </div>")
+							}
+							else{
+								document.write("<div style=\"float:left;width:25%;border:1px solid black; background-color:red\" align=\"center\"> 이상 </div>")
+							}
+						</script>
+						<!--
+						<div style="float:left;width:25%;border:1px solid black" align="center"> {{Anorm[1]}} </div>
+						-->
+						<div style="float:left;width:50%;border:1px solid black" align="center">{{Dname[2]}} </div>
+						<div style="float:left;width:25%;border:1px solid black" align="center"> {{OnOff[2]}} </div>
+						<script type = 'text/javascript'>
+							if ( {{Anorm[2]}} == '0'){
+								document.write("<div style=\"float:left;width:25%;border:1px solid black; background-color:green\" align=\"center\"> 정상 </div>")
+							}
+							else{
+								document.write("<div style=\"float:left;width:25%;border:1px solid black; background-color:red\" align=\"center\"> 이상 </div>")
+							}
+						</script>
+						<!--
+						<div style="float:left;width:25%;border:1px solid black" align="center"> {{Anorm[2]}} </div>
+						-->
+					</fieldset>
+				</div>
+
+				<!-- body 둘째 줄 -->
+				<div style="float:left; width:100%">
+					<!--- 테이블 필드셋 -->
+					<fieldset style="padding:3px; margin : 0px 0px 0px 10px; border: 3px solid black; float:left; width:15%">
+						<legend style="margin : 0px; padding:0px; color:blue" align="center">시간별 발전량</legend>
+						<table style="width :100%;">
+							<tr>
+								<th style="width : 50%; height : 15px; text-align : center;">일</th>
+								<th style="width : 50%; height : 15px; text-align : center;">발전량</th>
+							</tr>
+							<script type = 'text/javascript'>
+                                          for(i=1; i <= 31; i++){
+                                             document.write("<tr><td style=\"width : 50%\">" + i+ "</td>" + "<td style=\"width : 50%\">"+ ({{lst_y}}[i]==null ? "-" : {{lst_y}}[i]) + "</td></tr>");
+                                          }
+                            </script>
+						</table>
+					</fieldset>
+
+					<!-- 이미지 필드셋 -->
+					<fieldset style="padding:3px; margin:0px 0px 0px 10px; border: 3px solid black; float:left; overflow:auto; width:80%">
+						<legend style="margin:0px; padding:0px; color:blue" align="center">발전량 그래프</legend>
+						<div id="chart">
+
+						</div>
+						<script>
+							Highcharts.chart('chart', {
+								chart: {
+									type: 'column'
+								},
+								title: {
+									text: '월별 발전량'
+								},
+								xAxis: {
+									categories: [
+										'Jan',
+										'Feb',
+										'Mar',
+										'Apr',
+										'May',
+										'Jun',
+										'Jul',
+										'Aug',
+										'Sep',
+										'Oct',
+										'Nov',
+										'Dec'
+									],
+									crosshair: false
+								},
+								yAxis: {
+									min: 0,
+									title: {
+									text: '발전량 (kW)'
+								}
+							},
+							tooltip: {
+								headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+								pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+								'<td style="padding:0"><b>{point.y:.1f} kw</b></td></tr>',
+								footerFormat: '</table>',
+								shared: true,
+								useHTML: true
+							},
+							plotOptions: {
+								column: {
+									pointPadding: 0.2,
+									borderWidth: 0
+								}
+							},
+							series: [{
+								name: '월 평균 발전량',
+								data: {{cumP_mon}}
+							}]
+							});
+						</script>
+
+					</fieldset>
+
+					<fieldset style="padding:3px; margin:0px 0px 0px 10px; border: 3px solid black; float:left; overflow:auto; width:80%">
+						<legend style="margin:0px; padding:0px; color:blue" align="center">발전량 예보</legend>
+						<table>
+							<tr>
+								<td>요일</td>
+								<td>목</td>
+								<td>금</td>
+								<td>토</td>
+								<td>일</td>
+								<td>월</td>
+								<td>화</td>
+								<td>수</td>
+							</tr>
+							<tr >
+								<td  style="vertical-align:middle">날씨</td>
+								<td><img src="./static/images/THU.png"></td>
+								<td><img src="./static/images/FRI.png"></td>
+								<td><img src="./static/images/SAT.png"></td>
+								<td><img src="./static/images/SUN.png"></td>
+								<td><img src="./static/images/MON.png"></td>
+								<td><img src="./static/images/TUE.png"></td>
+								<td><img src="./static/images/WED.png"></td>
+							</tr>
+							<tr>
+								<td>예측 발전량</td>
+								<td>11.3 kW</td>
+								<td>9.9 kW</td>
+								<td>9.6 kW</td>
+								<td>10.5 kW</td>
+								<td>9.1 kW</td>
+								<td>10.9 kW</td>
+								<td>11.1 kW</td>
+							</tr>
+						</table>
+					</fieldset>
+				</div>
+								<!-- body -->
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Accumsan montes viverra</h3>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer
+								non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+								accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis
+								in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu
+								faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+						</section>
+						<section>
+							<h4>Sem turpis amet semper</h4>
+							<ul class="alt">
+								<li><a href="#">Dolor pulvinar sed etiam.</a></li>
+								<li><a href="#">Etiam vel lorem sed amet.</a></li>
+								<li><a href="#">Felis enim feugiat viverra.</a></li>
+								<li><a href="#">Dolor pulvinar magna etiam.</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Magna sed ipsum</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!--<form action="/simulation_result" method="post">
+    <div>
+        <label for="city">지역:</label>
+        <input type="text" id="city" name="user_city" />
+    </div>
+    <div>
+        <label for="csize">면적:</label>
+        <input type="text" id="csize" name="user_csize" />
+    </div>
+
+    <div class="button">
+        <button type="submit">Send your input</button>
+    </div>
+</form> -->
+
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>simulation page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="static/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="home">Home</a>
+				<a class="logo" href="LocationRating">사업부지 입지등급</a>
+				<a class="logo" href="LocationRating">지역별 기후 및 참고자료</a>
+				<a class="logo" href="market">장비 구축 및 판매 업체 연계</a>
+				<a class="logo" href="simulation">수익성·발전량 시뮬레이션</a>
+				<a class="logo" href="login">웹 모니터링</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="LocationRating">사업부지 및 입지등급</a></li>
+					<li><a href="LocationRating">지역별 기후 및 참고자료</a></li>
+					<li><a href="market">장비 구축 및 판매 업체</a></li>
+					<li><a href="simulation">수익성·발전량 시뮬레이션</a></li>
+					<li><a href="login">웹 모니터링(사업자)</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>시뮬레이션</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+                <div class="inner">
+                    <div class="content">
+                        <!-- Form -->
+                        <h3>Form</h3>
+                        <form method="post" action="/simulation_result">
+                            <div class="row gtr-uniform">
+                                <div class="col-6 col-12-xsmall">
+                                    <label>지역: </label>
+                                    <input type="text" name="city" id="city" value="" placeholder="서울특별시 종로구" />
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <label for="csize">발전용량:</label>
+                                    <input type="text" name="csize" id="csize" value="" placeholder="1000" />
+                                </div>
+
+                                <!-- Break -->
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Submit Form" class="primary" /></li>
+                                        <li><input type="reset" value="Reset" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+					</div>
+				</div>
+            </section>
+
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
