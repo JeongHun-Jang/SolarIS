@@ -1,4 +1,4 @@
-ID,DID,day,radiation,generation
+ID,DID,day,radiation,cumDP
 1,1,1,4.85,10.9125
 1,1,2,4.9,11.025
 1,1,3,4.8,10.8

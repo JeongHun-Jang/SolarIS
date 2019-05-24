@@ -5,7 +5,8 @@ import pandas as pd
 
 app=Flask(__name__)
 
-path = '/home/yukyung/mysite/'
+#path = '/home/yukyung/mysite/'
+path = './'
 enc = 'utf-8'
 
 @app.route("/")
@@ -15,10 +16,6 @@ def hello():
 @app.route('/home')
 def home():
     return render_template('index.html')
-
-@app.route('/test')
-def home233():
-    return render_template('dsdsdsd.html')
 
 @app.route('/generic')
 def gen():
@@ -163,7 +160,6 @@ def check():
             return redirect('/login')
 
         Dname = list(df_anorm.DID) # 인버터 이름
-        print(len(Dname))
         Devices = len(Dname)  # 인버터 개수
         OnOff = list(df_anorm.OnOff) # 인버터 온오프
         Anorm = list(df_anorm.anorm) # 인버터 이상여부
@@ -171,17 +167,16 @@ def check():
         cumYP = sum(list(df_anorm.cumYP)) # 연발전량
         cumTP = cumYP * 3.24 # 총발전량
 
-        df_day = pd.read_csv(path + "monitoring_day_fin.csv", encoding = enc)
+        df_day = pd.read_csv(path + "monitoring_day_table.csv", encoding = enc)
         df_day_user = df_day[df_day.ID==ID]  # ID에 해당하는 데이터프레임 가져옴
         cumP_day = list(df_day_user.cumDP) # 일별 발전량( 표, 그래프 용도 )
         cumDP = sum(cumP_day) # 일발전량
+        print(cumP_day)
 
         df_mon = pd.read_csv(path + "monitoring_month.csv", encoding = enc)
         df_mon_user = df_mon[df_mon.ID==ID] #
         cumP_mon = list(df_mon_user.cumMP)
-        print(cumP_mon)
 
-        print("hi")
         # MonitoringResult.html 에서 uid 로 변수를 사용 가능
         return render_template('MonitoringResult.html',
                                uid=uid,  # 유저 아이디
@@ -198,6 +193,11 @@ def check():
                                )
     else:  # pw 불일치
         return redirect('/login')
+
+@app.route('/baljeon.csv', methods=['GET'])
+def baljeon():
+    filename = 'static/baljeon.csv'
+    return send_file(filename)
 
 # @app.route('/sql/')
 # def sql():
