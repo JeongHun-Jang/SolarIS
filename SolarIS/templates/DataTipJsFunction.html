@@ -14,10 +14,16 @@
 <!-- rMateMapChartH5 CSS -->
 <link rel="stylesheet" type="text/css" href="static/rMateMapChartH5/Assets/rMateMapChartH5.css"/>
 
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
 <script type="text/javascript" src="static/js/d3.js"></script>
 <script type="text/javascript"charset="utf-8">
 	var res = "null"
 	var res2 = "null"
+	var res3 = "null"
 	d3.csv("data1_final.csv", function(data) {
 		res = data.map(function(item) {
 		  return Object.values(item);
@@ -25,6 +31,11 @@
 	});
 	d3.csv("csv_data.csv", function(data) {
 		res2 = data.map(function(item) {
+		  return Object.values(item);
+		});
+	});
+	d3.csv("baljeon.csv", function(data) {
+		res3 = data.map(function(item) {
 		  return Object.values(item);
 		});
 	});
@@ -89,6 +100,8 @@ rMateMapChartH5.create("map1", "mapHolder", mapVars, "102%", "102%");
 */
 
 var first = "null";
+
+var value = "null";
 
 function dataTipFunction(seriesId, code, label, data) {
 	for(var c=0; c<res.length; c++) {
@@ -464,7 +477,7 @@ var mapData = [{"code":100, "sales":85, "profit":540},
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<div class="headerTitle"> 사업부지 입지등급 제공</div>
+			<div class="headerTitle"> 사업부지 입지등급·참고자료 </div>
 		</div>
 		<div id="content">
 			<!-- 차트가 삽입될 DIV -->
@@ -475,14 +488,14 @@ var mapData = [{"code":100, "sales":85, "profit":540},
 		<p><font size=5>지역별 특성 및 참고 자료</font></p>
 		<p><strong><font size=3>지역</font></strong></p>
 		<p id="tag">&nbsp;&nbsp;-</p>
-		<p><strong><font size=3>일사량(년, 단위 : MJ/m2)</font></strong></p>
+		<p><strong><font size=3>일사량(년, 단위 : MJ/㎡)</font></strong></p>
 		<p id="tag2">&nbsp;&nbsp;-</p>
-		<p><strong><font size=3>평균 토지 매매가(㎡)</font></strong></p>
+		<p><strong><font size=3>평균 토지 매매가(3.3㎡)</font></strong></p>
 		<p id="tag3">&nbsp;&nbsp;-</p>
 		<p><strong><font size=3>제도</font></strong></p>
 		<p id="tag4">&nbsp;&nbsp;-</p>
 		<p><strong><font size=3>기후</font></strong></p>
-		<div style="height: auto; width: 400px;"><pre style="word-wrap: break-word; font-size: 12px; line-height:1.6em; white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-break:break-all;" id="tag5">&nbsp;&nbsp;</pre></div>
+		<div style="height: auto; width: 300px;"><pre style="word-wrap: break-word; font-size: 12px; line-height:1.6em; white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-break:break-all;" id="tag5">&nbsp;&nbsp;</pre></div>
 		<!--<h4>Alternate</h4>-->
 			<!--<ul class="alt">-->
 				<!--<li>Dolor pulvinar amet etiam.</li>-->
@@ -491,8 +504,7 @@ var mapData = [{"code":100, "sales":85, "profit":540},
 			<!--</ul>-->
 		<script>
 			function clickFunction2(code, label, data) {
-				console.log(label)
-				if(label != "서울" && label != "인천" && label != "경기도" && label != "강원도" && label != "대전" && label != "충청북도" && label != "충청남도" && label != "전라북도" && label != "광주" && label != "제주도" && label != "전라남도" && label != "경상남도" && label != "부산" && label != "울산" && label != "대구" && label != "인천" && label != "경상북도"){
+				if(label != "서울" && label != "인천" && label != "경기도" && label != "강원도" && label != "대전" && label != "충청북도" && label != "충청남도" && label != "전라북도" && label != "광주" && label != "제주도" && label != "전라남도" && label != "경상남도" && label != "부산" && label != "울산" && label != "대구" && label != "인천" && label != "경상북도" && label != "세종"){
 					document.getElementById('tag').innerHTML="&nbsp;&nbsp;&nbsp;"+label
 					for(var i=0; i<res.length; i++) {
 						if(res[i][2] == label){
@@ -525,10 +537,104 @@ var mapData = [{"code":100, "sales":85, "profit":540},
 							}
 						}
 					}
+				}else{
+					var varr1=[1, 1, 1, 1, 1, 1, 1, 1];
+					var varr2=[1, 1, 1, 1, 1, 1, 1, 1];
+					for(var c=0; c<res3.length; c++) {
+					console.log(res3[c][16])
+					console.log(label)
+						if(res3[c][16] == label){
+							varr1=[Number(res3[c][0]),Number(res3[c][2]),Number(res3[c][4]),Number(res3[c][6]),Number(res3[c][8]),Number(res3[c][10]),Number(res3[c][12]),Number(res3[c][14])];
+							varr2=[Number(res3[c][1]),Number(res3[c][3]),Number(res3[c][5]),Number(res3[c][7]),Number(res3[c][9]),Number(res3[c][11]),Number(res3[c][13]),Number(res3[c][15])];
+							console.log(varr1)
+							console.log(varr2)
+						}
+					}
+					chart.series[0].update({
+						data: varr2
+					});
+					chart.series[1].update({
+						data: varr1
+					});
+
+					chart.setTitle(null, { text: label});
 				}
 				first = label;
 			}
 		</script>
+	</div>
+	<!--<script>-->
+		<!--#container2 {-->
+		  <!--&lt;!&ndash;min-width: 310px;&ndash;&gt;-->
+		  <!--&lt;!&ndash;max-width: 500px;&ndash;&gt;-->
+		  <!--&lt;!&ndash;max-height: 500px;&ndash;&gt;-->
+		  <!--width:520px;-->
+		  <!--height:550px;-->
+		  <!--margin: 0 auto-->
+		<!--}-->
+	<!--</script>-->
+	<div class="description">
+	<p><font size=5>연간 누적 발전량</font></p>
+	<div id="container2" style="width:450px;"></div>
+	<script>
+		var chart = new Highcharts.chart('container2', {
+		  title: {
+			text: '지역별 연간 누적 발전량, 2010-2017'
+		  },
+
+		  chart: {
+			renderTo: 'containter',
+			backgroundColor: null
+		},
+
+		  <!--subtitle: {-->
+			<!--text: thesolarfoundation.com'-->
+		  <!--},-->
+
+		  yAxis: {
+			title: {
+			  text: '발전량(MWh)'
+			}
+		  },
+		  legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlign: 'middle'
+		  },
+
+		  plotOptions: {
+			series: {
+			  label: {
+				connectorAllowed: false
+			  },
+			  pointStart: 2010
+			}
+		  },
+
+		  series: [{
+			name: '자가용',
+			data: [0, 0, 0, 0, 0, 0, 0, 0]
+		  }, {
+			name: '사업용',
+			data: [0, 0, 0, 0, 0, 0, 0, 0]
+		  }],
+		  responsive: {
+			rules: [{
+			  condition: {
+				maxWidth: 500
+			  },
+			  chartOptions: {
+				legend: {
+				  layout: 'horizontal',
+				  align: 'center',
+				  verticalAlign: 'bottom'
+				}
+			  }
+			}]
+		  }
+
+		});
+	</script>
 	</div>
 </body>
 </html>
