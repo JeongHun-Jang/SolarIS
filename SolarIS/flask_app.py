@@ -171,17 +171,22 @@ def check():
         df_day = pd.read_csv(path + "monitoring_day_table.csv", encoding = enc)
         df_day_user = df_day[df_day.ID==ID]  # ID에 해당하는 데이터프레임 가져옴
         cumP_day = list(df_day_user.cumDP) # 일별 발전량( 표, 그래프 용도 )
-        cumDP = round(sum(cumP_day),2) # 일발전량
+        cumDP = round(sum(cumP_day)/len(cumP_day)*3 ,2) # 일발전량
         cumP_day = [round(i,2) for i in cumP_day]
 
         df_mon = pd.read_csv(path + "monitoring_month.csv", encoding = enc)
         df_mon_user = df_mon[df_mon.ID==ID] #
         cumP_mon = list(df_mon_user.cumMP)
 
+        # 26일까지만 표기
         for i in range(len(cumP_day)):
             if i >= 27:
                 cumP_day[i] = 0
 
+        # 5월까지만 표기
+        for i in range(len(cumP_mon)):
+            if i > 5:
+                cumP_mon[i] = 0
 
         # MonitoringResult.html 에서 uid 로 변수를 사용 가능
         return render_template('MonitoringResult.html',
