@@ -150,7 +150,7 @@
 				<div style="float:left; width:100%">
 					<!--- 테이블 필드셋 -->
 					<fieldset style="padding:3px; margin : 0px 0px 0px 10px; border: 3px solid black; float:left; width:15%">
-						<legend style="margin : 0px; padding:0px; color:blue" align="center">시간별 발전량</legend>
+						<legend style="margin : 0px; padding:0px; color:blue" align="center">일별 발전량</legend>
 						<table style="width :100%;">
 							<tr>
 								<th style="width : 50%; height : 15px; text-align : center;">일</th>
@@ -158,7 +158,7 @@
 							</tr>
 							<script type = 'text/javascript'>
                                           for(i=1; i <= 31; i++){
-                                             document.write("<tr><td style=\"width : 50%\">" + i+ "</td>" + "<td style=\"width : 50%\">"+ ({{lst_y}}[i]==null ? "-" : {{lst_y}}[i]) + "</td></tr>");
+                                             document.write("<tr><td style=\"width : 50%\">" + i+ "</td>" + "<td style=\"width : 50%\">"+ ({{cumP_day}}[i]==null ? "-" : {{cumP_day}}[i]) + "kW</td></tr>");
                                           }
                             </script>
 						</table>
