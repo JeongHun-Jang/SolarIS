@@ -167,11 +167,12 @@ def check():
         cumYP = sum(list(df_anorm.cumYP)) # 연발전량
         cumTP = cumYP * 3.24 # 총발전량
 
+
         df_day = pd.read_csv(path + "monitoring_day_table.csv", encoding = enc)
         df_day_user = df_day[df_day.ID==ID]  # ID에 해당하는 데이터프레임 가져옴
         cumP_day = list(df_day_user.cumDP) # 일별 발전량( 표, 그래프 용도 )
-        cumDP = sum(cumP_day) # 일발전량
-        print(cumP_day)
+        cumDP = round(sum(cumP_day),2) # 일발전량
+        cumP_day = [round(i,2) for i in cumP_day]
 
         df_mon = pd.read_csv(path + "monitoring_month.csv", encoding = enc)
         df_mon_user = df_mon[df_mon.ID==ID] #
