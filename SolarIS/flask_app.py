@@ -179,7 +179,7 @@ def check():
         cumP_mon = list(df_mon_user.cumMP)
 
         for i in range(len(cumP_day)):
-            if i >= 26:
+            if i >= 27:
                 cumP_day[i] = 0
 
 
