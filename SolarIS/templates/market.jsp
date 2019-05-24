@@ -36,6 +36,15 @@
     li div a {
         color:#222222;
     }
+    li div.areas{
+        margin : 10px;
+        height: 100px;
+    }
+
+    li div.title{
+        margin : 0px 5px 0px 5px;
+    }
+
     .prices {
         font-size : 20pt; text-align : right;
     }
@@ -47,19 +56,25 @@
     }
     ul.deal-list li {
 		display: inline-block;
-    	padding: 10px;
-    	margin-bottom: 5px;
+		padding: 0px;
+    	margin: 10px;
     	border: 2px solid #888888;
     	cursor: pointer;
-    	width: 24%;
-    	height: 100%;
+    	width: 350px;
+    	height: 550px;
+    	overflow : hidden;
+    }
+    div.deal-inner div.img {
+    	text-align:center;
     }
     div.deal-inner div.img img {
-    	width: 100%;
-    	border: 4px solid #888888;
+    	width: 95%;
+    	margin: 1px;
+
     }
     div.btns .order_bt{
         width: $('ul.deal-list li').width;
+        margin : 10px 10px 10px 15px;
     }
     div.prices span.left {
         float:left;
@@ -72,12 +87,7 @@
 
 <!-- Header -->
 <header id="header">
-	<a class="logo" href="home">Home</a>
-    <a class="logo" href="LocationRating">사업부지 입지등급</a>
-    <a class="logo" href="LocationRating">지역별 기후 및 참고자료</a>
-    <a class="logo" href="market">장비 구축 및 판매 업체 연계</a>
-    <a class="logo" href="simulation">수익성·발전량 시뮬레이션</a>
-    <a class="logo" href="login">웹 모니터링</a>
+	<a class="logo" href="index.html">Industrious</a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -85,11 +95,9 @@
 <!-- Nav -->
 <nav id="menu">
 	<ul class="links">
-		<li><a href="LocationRating">사업부지 및 입지등급</a></li>
-        <li><a href="LocationRating">지역별 기후 및 참고자료</a></li>
-        <li><a href="market">장비 구축 및 판매 업체</a></li>
-        <li><a href="simulation">수익성·발전량 시뮬레이션</a></li>
-        <li><a href="login">웹 모니터링(사업자)</a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="LocationRating">Elements</a></li>
+		<li><a href="generic.html">Generic</a></li>
 	</ul>
 </nav>
 
