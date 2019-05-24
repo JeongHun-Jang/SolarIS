@@ -151,7 +151,7 @@ def check():
 
     if int(result):  # id pw 일치 시
         # ID 가져오기
-        ID = df[(df['PW'] == uid) & (df['PID'] == pwd)]['ID'][0]
+        ID = df[(df['PID'] == uid) & (df['PW'] == pwd)]['ID'][0]
 
         df2 = pd.read_csv(path + "monitoring_anorm.csv", encoding = enc)
         df_anorm = df2[df2.ID==ID]
@@ -163,9 +163,9 @@ def check():
         Devices = len(Dname)  # 인버터 개수
         OnOff = list(df_anorm.OnOff) # 인버터 온오프
         Anorm = list(df_anorm.anorm) # 인버터 이상여부
-        cumMP = sum(list(df_anorm.cumMP)) # 월발전량
-        cumYP = sum(list(df_anorm.cumYP)) # 연발전량
-        cumTP = cumYP * 3.24 # 총발전량
+        cumMP = round(sum(list(df_anorm.cumMP)),2) # 월발전량
+        cumYP = round(sum(list(df_anorm.cumYP)),2) # 연발전량
+        cumTP = round(cumYP*3.24, 2) # 총발전량
 
 
         df_day = pd.read_csv(path + "monitoring_day_table.csv", encoding = enc)
