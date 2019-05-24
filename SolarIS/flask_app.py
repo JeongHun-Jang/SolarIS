@@ -178,6 +178,11 @@ def check():
         df_mon_user = df_mon[df_mon.ID==ID] #
         cumP_mon = list(df_mon_user.cumMP)
 
+        for i in range(len(cumP_day)):
+            if i >= 26:
+                cumP_day[i] = 0
+
+
         # MonitoringResult.html 에서 uid 로 변수를 사용 가능
         return render_template('MonitoringResult.html',
                                uid=uid,  # 유저 아이디
