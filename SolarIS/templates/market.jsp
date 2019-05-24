@@ -124,25 +124,35 @@
 <ul class="deal-list" id="dealListDiv">
 
 </ul>
-         <!-- Footer -->
+<<<<<<< HEAD
+<!-- Footer -->
          <footer id="footer">
             <div class="inner">
-               <div class="content" align = "center">
-                    <div class="company_info" style="width : 50%;">
-                        <div>(주)좋아해</div>
-                        <div>대표이사: 심민기                    경기도 성남시 분당구 성남대로 343번길 9</div>
-                        <div>사업자 등록번호 774-05-01254        Tech Center:02-3333-2222</div>
-                    </div>
-                    <div class="sns_info" style="width : 35%;">
-                        <ul class="plain">
-                            <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-                            <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-                            <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-                        </ul>
-                    </div>
+               <div class="content">
+                  <section>
+                     <h3>(주)좋아해컴퍼니</h3>
+                     <p>대표이사: 심민기<br>경기도 성남시 분당구 성남대로 343번길 9</p>
+                     <p>© 2019 (주)좋아해컴퍼니 All rights reserved</p>
+                  </section>
+                  <section>
+					  <h3> <br> </h3>
+					  <p>사업자 등록번호 774-05-01254<br>Tech Center:02-3333-2222</p>
+                  </section>
+				   <section>
+
+				   </section>
+                  <section>
+                     <ul class="plain">
+						 <br>
+                        <li><i class="icon fa-facebook">&nbsp;</i>Facebook</li>
+                        <li><i class="icon fa-instagram">&nbsp;</i>Instagram</li>
+                        <li><i class="icon fa-github">&nbsp;</i>Github</li>
+                     </ul>
+                  </section>
                </div>
             </div>
          </footer>
+
 
 <!-- Scripts -->
 <script src="static/js/jquery.min.js"></script>
