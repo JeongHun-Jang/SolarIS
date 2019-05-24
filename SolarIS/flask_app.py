@@ -185,7 +185,7 @@ def check():
 
         # 5월까지만 표기
         for i in range(len(cumP_mon)):
-            if i > 5:
+            if i >= 5:
                 cumP_mon[i] = 0
 
         # MonitoringResult.html 에서 uid 로 변수를 사용 가능
