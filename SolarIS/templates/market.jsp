@@ -149,27 +149,10 @@
                         <li><i class="icon fa-github">&nbsp;</i>Github</li>
                      </ul>
                   </section>
-=======
-         <!-- Footer -->
-         <footer id="footer">
-            <div class="inner">
-               <div class="content" align = "center">
-                    <div class="company_info" style="width : 50%;">
-                        <div>(주)좋아해</div>
-                        <div>대표이사: 심민기                    경기도 성남시 분당구 성남대로 343번길 9</div>
-                        <div>사업자 등록번호 774-05-01254        Tech Center:02-3333-2222</div>
-                    </div>
-                    <div class="sns_info" style="width : 35%;">
-                        <ul class="plain">
-                            <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-                            <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-                            <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-                        </ul>
-                    </div>
->>>>>>> 0f2db27c4a2fe680688c6279a14d06babd77d003
                </div>
             </div>
          </footer>
+
 
 <!-- Scripts -->
 <script src="static/js/jquery.min.js"></script>

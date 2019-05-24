@@ -13,13 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
+            <state relative-caret-position="3306">
               <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="200" selection-end-column="18" />
-              <folding>
-                <element signature="e#6650#6656#1" expanded="true" />
-                <element signature="e#6747#6753#1" expanded="true" />
-                <element signature="e#6842#6848#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -27,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/DataTipJsFunction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
+            <state relative-caret-position="12160">
               <caret line="640" selection-start-line="640" selection-end-line="640" />
             </state>
           </provider>
@@ -36,13 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/simulation_result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="5054">
               <caret line="266" selection-start-line="266" selection-end-line="266" />
-              <folding>
-                <element signature="e#8814#8820#1" expanded="true" />
-                <element signature="e#8895#8901#1" expanded="true" />
-                <element signature="e#8974#8980#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -50,13 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/simulation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
+            <state relative-caret-position="2166">
               <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-              <folding>
-                <element signature="e#3942#3948#1" expanded="true" />
-                <element signature="e#4023#4029#1" expanded="true" />
-                <element signature="e#4102#4108#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -64,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3420">
+            <state relative-caret-position="228">
               <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
             </state>
           </provider>
@@ -73,13 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/MonitoringResult.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="5605">
               <caret line="295" column="18" selection-start-line="295" selection-start-column="18" selection-end-line="295" selection-end-column="18" />
-              <folding>
-                <element signature="e#10513#10519#1" expanded="true" />
-                <element signature="e#10594#10600#1" expanded="true" />
-                <element signature="e#10673#10679#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,13 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/MonitoringLogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="1957">
               <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
-              <folding>
-                <element signature="e#3063#3069#1" expanded="true" />
-                <element signature="e#3144#3150#1" expanded="true" />
-                <element signature="e#3223#3229#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Legend.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1570">
+            <state relative-caret-position="1805">
               <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
             </state>
           </provider>
@@ -110,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/generic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="154" column="33" lean-forward="true" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
+            <state relative-caret-position="2926">
+              <caret line="154" column="33" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -119,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/market.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1043">
-              <caret line="171" column="18" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
+            <state relative-caret-position="259">
+              <caret line="160" column="41" lean-forward="true" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -374,9 +349,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.flask_app" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.flask_app" />
       <item itemvalue="Python tests.Nosetests in flask_app.py" />
     </list>
     <recent_temporary>
@@ -426,6 +401,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2239873" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -646,98 +622,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3306">
+          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="200" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/DataTipJsFunction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
+        <state relative-caret-position="12160">
           <caret line="640" selection-start-line="640" selection-end-line="640" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/simulation_result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
+        <state relative-caret-position="5054">
           <caret line="266" selection-start-line="266" selection-end-line="266" />
-          <folding>
-            <element signature="e#8814#8820#1" expanded="true" />
-            <element signature="e#8895#8901#1" expanded="true" />
-            <element signature="e#8974#8980#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/simulation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
+        <state relative-caret-position="2166">
           <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-          <folding>
-            <element signature="e#3942#3948#1" expanded="true" />
-            <element signature="e#4023#4029#1" expanded="true" />
-            <element signature="e#4102#4108#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/popup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3420">
+        <state relative-caret-position="228">
           <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/MonitoringResult.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="5605">
           <caret line="295" column="18" selection-start-line="295" selection-start-column="18" selection-end-line="295" selection-end-column="18" />
-          <folding>
-            <element signature="e#10513#10519#1" expanded="true" />
-            <element signature="e#10594#10600#1" expanded="true" />
-            <element signature="e#10673#10679#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/MonitoringLogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="1957">
           <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
-          <folding>
-            <element signature="e#3063#3069#1" expanded="true" />
-            <element signature="e#3144#3150#1" expanded="true" />
-            <element signature="e#3223#3229#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Legend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1570">
+        <state relative-caret-position="1805">
           <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="200" selection-end-column="18" />
-          <folding>
-            <element signature="e#6650#6656#1" expanded="true" />
-            <element signature="e#6747#6753#1" expanded="true" />
-            <element signature="e#6842#6848#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/generic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="154" column="33" lean-forward="true" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
+        <state relative-caret-position="2926">
+          <caret line="154" column="33" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/market.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1043">
-          <caret line="171" column="18" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
+        <state relative-caret-position="259">
+          <caret line="160" column="41" lean-forward="true" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
         </state>
       </provider>
     </entry>
