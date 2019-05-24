@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
+
 <!-- rMateChartH5 라이센스 -->
 <script type="text/javascript" src="static/LicenseKey/rMateMapChartH5License.js"></script>
 <!-- rMateMapChartH5 라이브러리 -->
@@ -24,6 +25,7 @@
 	var res = "null"
 	var res2 = "null"
 	var res3 = "null"
+	var chart ="null"
 	d3.csv("data1_final.csv", function(data) {
 		res = data.map(function(item) {
 		  return Object.values(item);
@@ -76,8 +78,8 @@ var mapDataBaseURL = "static/MapDataBaseXml/SouthKoreaDrillDown_opacity.xml";
 var sourceURL = "static/MapSource/SouthKoreaDrillDown.svg";
 
 // rMateMapChart 를 생성합니다.
-// 파라메터 (순서대로) 
-//  1. 맵차트의 id ( 임의로 지정하십시오. ) 
+// 파라메터 (순서대로)
+//  1. 맵차트의 id ( 임의로 지정하십시오. )
 //  2. 맵차트가 위치할 div 의 id (즉, 차트의 부모 div 의 id 입니다.)
 //  3. 맵차트 생성 시 필요한 환경 변수들의 묶음인 chartVars
 //  4. 맵차트의 가로 사이즈 (생략 가능, 생략 시 100%)
@@ -492,8 +494,6 @@ var mapData = [{"code":100, "sales":85, "profit":540},
 		<p id="tag2">&nbsp;&nbsp;-</p>
 		<p><strong><font size=3>평균 토지 매매가(3.3㎡)</font></strong></p>
 		<p id="tag3">&nbsp;&nbsp;-</p>
-		<p><strong><font size=3>제도</font></strong></p>
-		<p id="tag4">&nbsp;&nbsp;-</p>
 		<p><strong><font size=3>기후</font></strong></p>
 		<div style="height: auto; width: 300px;"><pre style="word-wrap: break-word; font-size: 12px; line-height:1.6em; white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-break:break-all;" id="tag5">&nbsp;&nbsp;</pre></div>
 		<!--<h4>Alternate</h4>-->
@@ -538,6 +538,65 @@ var mapData = [{"code":100, "sales":85, "profit":540},
 						}
 					}
 				}else{
+					if(first == "null"){
+						chart = new Highcharts.chart('container2', {
+						  title: {
+							text: '지역별 연간 누적 발전량, 2010-2017'
+						  },
+
+						  chart: {
+							renderTo: 'containter',
+							backgroundColor: null
+						},
+
+						  <!--subtitle: {-->
+							<!--text: thesolarfoundation.com'-->
+						  <!--},-->
+
+						  yAxis: {
+							title: {
+							  text: '발전량(MWh)'
+							}
+						  },
+						  legend: {
+							layout: 'vertical',
+							align: 'right',
+							verticalAlign: 'middle'
+						  },
+
+						  plotOptions: {
+							series: {
+							  label: {
+								connectorAllowed: false
+							  },
+							  pointStart: 2010
+							}
+						  },
+
+						  series: [{
+							name: '자가용',
+							data: [0, 0, 0, 0, 0, 0, 0, 0]
+						  }, {
+							name: '사업용',
+							data: [0, 0, 0, 0, 0, 0, 0, 0]
+						  }],
+						  responsive: {
+							rules: [{
+							  condition: {
+								maxWidth: 500
+							  },
+							  chartOptions: {
+								legend: {
+								  layout: 'horizontal',
+								  align: 'center',
+								  verticalAlign: 'bottom'
+								}
+							  }
+							}]
+						  }
+
+						});
+					}
 					var varr1=[1, 1, 1, 1, 1, 1, 1, 1];
 					var varr2=[1, 1, 1, 1, 1, 1, 1, 1];
 					for(var c=0; c<res3.length; c++) {
@@ -576,65 +635,6 @@ var mapData = [{"code":100, "sales":85, "profit":540},
 	<div class="description">
 	<p><font size=5>연간 누적 발전량</font></p>
 	<div id="container2" style="width:450px;"></div>
-	<script>
-		var chart = new Highcharts.chart('container2', {
-		  title: {
-			text: '지역별 연간 누적 발전량, 2010-2017'
-		  },
-
-		  chart: {
-			renderTo: 'containter',
-			backgroundColor: null
-		},
-
-		  <!--subtitle: {-->
-			<!--text: thesolarfoundation.com'-->
-		  <!--},-->
-
-		  yAxis: {
-			title: {
-			  text: '발전량(MWh)'
-			}
-		  },
-		  legend: {
-			layout: 'vertical',
-			align: 'right',
-			verticalAlign: 'middle'
-		  },
-
-		  plotOptions: {
-			series: {
-			  label: {
-				connectorAllowed: false
-			  },
-			  pointStart: 2010
-			}
-		  },
-
-		  series: [{
-			name: '자가용',
-			data: [0, 0, 0, 0, 0, 0, 0, 0]
-		  }, {
-			name: '사업용',
-			data: [0, 0, 0, 0, 0, 0, 0, 0]
-		  }],
-		  responsive: {
-			rules: [{
-			  condition: {
-				maxWidth: 500
-			  },
-			  chartOptions: {
-				legend: {
-				  layout: 'horizontal',
-				  align: 'center',
-				  verticalAlign: 'bottom'
-				}
-			  }
-			}]
-		  }
-
-		});
-	</script>
 	</div>
 </body>
 </html>
