@@ -17,9 +17,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="home">Home</a>
-				<a class="logo" href="LocationRating">사업부지 입지등급</a>
-				<a class="logo" href="LocationRating">지역별 기후 및 참고자료</a>
+				<a class="logo" href="home"><img src="static/images/solar.png" alt="" width="130" height="70"></a>
+				<a class="logo" href="LocationRating">사업부지 입지등급·참고자료 </a>
 				<a class="logo" href="market">장비 구축 및 판매 업체 연계</a>
 				<a class="logo" href="simulation">수익성·발전량 시뮬레이션</a>
 				<a class="logo" href="login">웹 모니터링</a>
@@ -31,8 +30,7 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="LocationRating">사업부지 및 입지등급</a></li>
-					<li><a href="LocationRating">지역별 기후 및 참고자료</a></li>
+					<li><a href="LocationRating">사업부지 입지등급·참고자료</a></li>
 					<li><a href="market">장비 구축 및 판매 업체</a></li>
 					<li><a href="simulation">수익성·발전량 시뮬레이션</a></li>
 					<li><a href="login">웹 모니터링(사업자)</a></li>
@@ -41,7 +39,7 @@
 
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>사업부지 위치 선정</h1>
+				<h1>사업부지 위치 선정·참고자료</h1>
 			</div>
 
 		<!-- Main -->
@@ -50,11 +48,14 @@
 				<!--<div class="inner">-->
 					<!--<div class="content">-->
 				<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+				<script src="https://code.highcharts.com/highcharts.js"></script>
+				<script src="https://code.highcharts.com/modules/series-label.js"></script>
+				<script src="https://code.highcharts.com/modules/exporting.js"></script>
+				<script src="https://code.highcharts.com/modules/export-data.js"></script>
 				<script type="text/javascript">
 					$(document).ready( function() {
 
 					$("#headers").load("DataTipJsFunction.html");  // 원하는 파일 경로를 삽입하면 된다
-					<!--$("#footers").load("DataTipJsFunction.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다-->
 
 					});
 				</script>
@@ -62,8 +63,6 @@
 					<!--</div>-->
 				<!--</div>-->
 			</section>
-
-
 		<!-- Scripts -->
 			<script src="static/js/jquery.min.js"></script>
 			<script src="static/js/browser.min.js"></script>
