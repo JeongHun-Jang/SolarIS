@@ -226,10 +226,10 @@ ul, li, pre{
 }
 
 #content, .content{
-	width:650px;
+	width:520px;
 	height:550px;
 	border: 1px solid #e8e8e8;
-	margin-left:70px;
+	margin-left:20px;
 	background-color: #fefefe;
 }
 
@@ -382,9 +382,9 @@ ul, li, pre{
 }
 
 .description{
-    float: left;
+   float: left;
 	font-size:13px;
-	margin-left:50px;
+	margin-left:20px;
 	margin-top:155px;
 	padding:10px 0 0 1px;
 	border-radius:3px;
