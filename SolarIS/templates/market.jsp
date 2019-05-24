@@ -124,38 +124,25 @@
 <ul class="deal-list" id="dealListDiv">
 
 </ul>
-<!-- Footer -->
-<footer id="footer">
-	<div class="inner">
-		<div class="content">
-			<section>
-				<h3>Accumsan montes viverra</h3>
-				<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
-			</section>
-			<section>
-				<h4>Sem turpis amet semper</h4>
-				<ul class="alt">
-					<li><a href="#">Dolor pulvinar sed etiam.</a></li>
-					<li><a href="#">Etiam vel lorem sed amet.</a></li>
-					<li><a href="#">Felis enim feugiat viverra.</a></li>
-					<li><a href="#">Dolor pulvinar magna etiam.</a></li>
-				</ul>
-			</section>
-			<section>
-				<h4>Magna sed ipsum</h4>
-				<ul class="plain">
-					<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-					<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-					<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-					<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-				</ul>
-			</section>
-		</div>
-		<div class="copyright">
-			&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
-		</div>
-	</div>
-</footer>
+         <!-- Footer -->
+         <footer id="footer">
+            <div class="inner">
+               <div class="content" align = "center">
+                    <div class="company_info" style="width : 50%;">
+                        <div>(주)좋아해</div>
+                        <div>대표이사: 심민기                    경기도 성남시 분당구 성남대로 343번길 9</div>
+                        <div>사업자 등록번호 774-05-01254        Tech Center:02-3333-2222</div>
+                    </div>
+                    <div class="sns_info" style="width : 35%;">
+                        <ul class="plain">
+                            <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                            <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                            <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+         </footer>
 
 <!-- Scripts -->
 <script src="static/js/jquery.min.js"></script>
