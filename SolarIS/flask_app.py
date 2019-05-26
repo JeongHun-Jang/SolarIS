@@ -120,9 +120,9 @@ def get_product_list():
         html_str += '</span><span class="unit">원</span></span></div></div><div class ="btns"><button type="button"class ="order_bt"><span class="blind">구매하기</span></button></div></div></a></div></li>'
     return html_str
 
-@app.route('/test')
-def test():
-    return render_template('test.jsp')
+# @app.route('/test')
+# def test():
+#     return render_template('test.jsp')
 
 @app.route('/tm')
 def tm():
